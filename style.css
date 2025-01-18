@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dcc7;
+    font-family: "Courier Prime", serif;
+}
+
+.Main-container {
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 700px;
+
+    h1{
+        font-weight: 700;
+        padding-left: 1em;
+        /* margin-inline: 1rem; */
+    }
+
+    nav{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    
+    ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        list-style: none;
+        padding: 15px;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+/* Sections */
+#Big-sections{
+    display: flex;
+    flex-direction: column;
+}
+.sections{
+    padding: 2em;
+}
+
+#section-one {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+}
+
+#section-one #image {
+    height: 500px;
+    background-image: url(Images/Picture-one.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
