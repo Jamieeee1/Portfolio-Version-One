@@ -9,6 +9,13 @@ body {
     padding: 0;
     background-color: #f5f5dcc7;
     font-family: "Courier Prime", serif;
+
+    h1,h2,h3,h4{
+        margin: 0;
+    }
+    p {
+        margin: 0;
+    }
 }
 
 .Main-container {
@@ -20,6 +27,7 @@ header{
     position: relative;
     width: 100%;
     min-width: 700px;
+    padding-top: 20px;
 
     h1{
         font-weight: 700;
@@ -69,10 +77,62 @@ header{
     gap: 2em;
 }
 
+#section-one #section-one-one {
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        font-size: 3rem;
+        margin: 0;
+        padding: 15px;
+    }
+
+    p {
+        padding: 15px;
+        margin: 0;
+        line-height: 40px;
+    }
+}
+
+#section-one .read-button{
+    padding: 15px;
+
+    button{
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
+
+#section-one-one .others{
+    padding: 2em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+
+    h3{
+        padding: 0;
+    }
+
+    p{
+        padding: 0;
+    }
+}
+
 #section-one #image {
     height: 500px;
     background-image: url(Images/Picture-one.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
+}
+
+#section-two {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 0;
+    margin: 2em;
+    background-color: #fff;
 }
