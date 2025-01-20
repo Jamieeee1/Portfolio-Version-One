@@ -100,6 +100,13 @@ header{
     button{
         padding: 10px;
         border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        background: inherit;
+    }
+
+    button:hover{
+        transform: scale(1.2);
     }
 }
 
@@ -132,7 +139,64 @@ header{
 #section-two {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
     padding: 0;
     margin: 2em;
     background-color: #fff;
+}
+
+#section-two #image-two {
+    /* background-image: url(Images/Picture-two.jpg); */
+    height: 400px;
+    margin: 2em;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    img {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+#section-two #section-two-div{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .paragraphs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        line-height: 40px;
+    }
+
+    .other-buttons {
+        button {
+            padding: 15px;
+            border-radius: 5px;
+            margin-inline: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #projects{
+            background-color: #5e5e57c7;
+            color: #fff;
+        }
+
+        #projects:hover {
+            background-color: #30302dc7;
+        }
+
+        #cv-button:hover{
+            background-color: #30302dc7;
+            color: #fff;
+        }
+    }
 }
