@@ -51,6 +51,7 @@ header{
 
     li{
         list-style: none;
+        /* padding: 10px; */
 
         a{
             text-decoration: none;
@@ -58,8 +59,45 @@ header{
             padding: 15px;
             cursor: pointer;
         }
+
     }
 }
+
+header li:hover{
+    transform: scale(1.2);
+}
+
+#contact-list{
+    position: relative;
+}
+
+#contact-list:hover {
+    background-color: #f1d5b0;
+}
+
+#contact-list:hover #contact-list-list {
+    display: block;
+}
+
+#contact-list-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(241, 213, 176, 0.6);
+    padding: 8px;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
 
 /* Sections */
 #Big-sections{
@@ -183,6 +221,8 @@ header{
             margin-inline: 0.5rem;
             cursor: pointer;
             font-size: 1rem;
+            
+           
         }
 
         #projects{
